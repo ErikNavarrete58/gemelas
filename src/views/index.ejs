@@ -1,0 +1,237 @@
+<%- include('principal/cabecera') %>
+
+
+    <%- include('principal/menu') %>
+
+    <style type="text/css">
+        .card {
+          display: block;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            transition: box-shadow .25s;
+        }
+        .card:hover {
+          box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .img-card {
+          width: 100%;
+          height:200px;
+          border-top-left-radius:2px;
+          border-top-right-radius:2px;
+          display:block;
+            overflow: hidden;
+        }
+        .img-card img{
+          width: 100%;
+          height: 200px;
+          object-fit:cover;
+          transition: all .25s ease;
+        }
+        .card-content {
+          padding:15px;
+          text-align:left;
+        }
+        .card-title {
+          margin-top:0px;
+          font-weight: 700;
+          font-size: 1.65em;
+        }
+        .card-title a {
+          color: #000;
+          text-decoration: none !important;
+        }
+        .card-read-more {
+          border-top: 1px solid #D4D4D4;
+        }
+        .card-read-more a {
+          text-decoration: none !important;
+          padding:10px;
+          font-weight:600;
+          text-transform: uppercase
+        }
+        
+        
+        </style>
+        
+        
+        
+        <div class="container-fluid">
+          
+            <!--clasificacion de filas-->
+        
+          <div class="row mx-auto mt-3">
+        
+                <div class="col-md-4">
+                    <div class="card">
+                        <a class="img-card img-fluid" href="/Mixta">
+                            <img src="portada/portadafb.jpg" />
+                        </a>
+                        <br />
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="/Mixta">
+        Categoria Mixta
+                         </a>
+                            </h4>
+                            <div class="">
+        tablas general , goleo , premiaciones
+                            </div>
+                        </div>
+                        <div class="card-read-more">
+                            <a class="btn btn-link btn-block" href="/Mixta">
+        Leer mas...                    </a>
+                        </div>
+                    </div>
+        </div>
+        
+                <div class="col-md-4">
+                    <div class="card">
+                        <a class="img-card" href="Femenil">
+                            <img src="portada/portadafb.jpg" />
+                        </a>
+                        <br />
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                
+        Categoria Femenil                   </h4>
+                            <div class="">
+        tablas general , goleo , premiaciones
+                            </div>
+                        </div>
+                        <div class="card-read-more">
+                            <a class="btn btn-link btn-block" href="Femenil">
+        Leer mas...                     </a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="img-card" href="sub19">
+                        <img src="portada/portadafb.jpg" />
+                    </a>
+                    <br />
+                    <div class="card-content">
+                        <h4 class="card-title">
+                            
+    Categoria Sub-19                   </h4>
+                        <div class="">
+    tablas general , goleo , premiaciones
+                        </div>
+                    </div>
+                    <div class="card-read-more">
+                        <a class="btn btn-link btn-block" href="sub19">
+    Leer mas...                     </a>
+                    </div>
+            </div>
+        </div>
+        
+                
+        
+        </div>
+        
+        </div>
+        
+        <div class="container-fluid">
+          
+            <!--clasificacion de filas-->
+        
+          <div class="row mx-auto mt-0">
+        
+                <div class="col-md-4">
+                    <div class="card">
+                        <a class="img-card img-fluid" href="/jugadores">
+                            <img src="/portada/registroid.jpg" />
+                        </a>
+                        <br />
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="/jugadores">
+        Registros
+                                </a>
+                            </h4>
+                            <div class="">
+        Registro y estadisticas Personales
+                            </div>
+                        </div>
+                        <div class="card-read-more">
+                            <a class="btn btn-link btn-block" href="/jugadores">
+        Leer mas...                    </a>
+                        </div>
+                    </div>
+        </div>
+        
+                <div class="col-md-4">
+                    <div class="card">
+                        <a class="img-card" href="equipos">
+                            <img src="/portada/trofeo.jpg" />
+                        </a>
+                        <br />
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="equipos">
+        Estadisticas por equipo
+                                </a>
+                            </h4>
+                            <div class="">
+        Mira todos los logros de tu actual equipo
+                            </div>
+                        </div>
+                        <div class="card-read-more">
+                            <a class="btn btn-link btn-block" href="equipos">
+        Leer mas...                     </a>
+                        </div>
+                </div>
+            </div>
+        
+                <div class="col-md-4">
+                    <div class="card">
+                        <a class="img-card" href="2020">
+                            <img src="/portada/portada2020.jpg" />
+                        </a>
+                        <br />
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                <a href="2020">
+        Lo mejor del 2020                    </h4>
+                            <div class="">
+        en construccion   </div>
+                        </div>
+                        <div class="card-read-more">
+                            <a class="btn btn-link btn-block" href="2020">
+        Leer mas...                     </a>
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <a class="img-card" href="historica">
+                    <img src="/portada/portada2020.jpg" />
+                </a>
+                <br />
+                <div class="card-content">
+                    <h4 class="card-title">
+Tabla Historica                  </h4>
+                    <div class="">
+Incluye todos los torneo de todas 
+las categorias
+     </div>
+                </div>
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="/historica">
+Leer mas...                     </a>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+
+
+    <%- include('principal/cierre') %>

@@ -1,0 +1,46 @@
+<a name="tablageneral"></a>
+    
+<div class="container p-4 mx-auto">
+
+<table class="table table-sm table-striped table-bordered table-hover">
+<h3>
+  <small class="text-muted">Tabla General <%- categoria %>  </small>
+</h3> 
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">#</th>
+
+      <th scope="col">Escudo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Puntos</th>
+      <th scope="col">GF</th>
+      <th scope="col">GC</th>
+      <th scope="col">DFG</th>
+      <th scope="col">PJ</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      
+      
+      
+
+    <% for(var i=0 ; i < vistas.length; i++) { %>
+      
+    <tr align="center">
+      <td><%- i+1 %></td>
+      <td><img src="<%- vistas[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- vistas[i].Equipo %></td>
+      <td><%- vistas[i].Puntos %></td>
+      <td><%- vistas[i].GF %></td>
+      <td><%- vistas[i].GC %></td>
+      <td><%- vistas[i].DFG %></td>
+      <td><%- vistas[i].PJ %></td>
+
+    </tr>
+    <% } %>
+
+  </tbody>
+</table>
+
+</div>

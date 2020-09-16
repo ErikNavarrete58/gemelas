@@ -1,0 +1,49 @@
+<%- include('../../principal/cabecera') %>
+<%- include('../../principal/menu') %>
+
+
+<a name="tablageneral"></a>
+    
+<div class="container p-4 mx-auto">
+    <h3>
+        <small class="text-muted">
+            Busqueda de registros que coinciden con: <%- id %>  
+        </small>
+      </h3> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">ID</th>
+
+      <th scope="col">Escudo</th>
+      <th scope="col">Equipo</th>
+      <th scope="col">Delegado</th>
+      
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      
+      
+      
+
+    <% for(var i=0 ; i < registro.length; i++) { %>
+      
+    <tr align="center">
+     <td><%- registro[i].id_plantel %></td>
+      <td><img src="<%- registro[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- registro[i].Nombre_Equipo %></td>
+      <td><%- registro[i].Delegado %></td>
+      
+
+    </tr>
+    <% } %>
+
+  </tbody>
+</table>
+
+</div>
+
+<%- include('../../principal/cierre') %>

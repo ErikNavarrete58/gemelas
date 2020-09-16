@@ -1,0 +1,12 @@
+    <% for(var i=0 ; i < registro.length; i++) { %>
+
+    <div class="card text-white bg-info border-dark text-center " style="width: 10rem;">
+        <img class="card-img-top" src="<%- registro[i].Escudo %>" alt="Card image cap">
+        <div class="card-body">
+            <u>   <h6 class="card-title"><%- registro[i].Nombre_Equipo %></h6></u>
+          <u> <h5> <p class="card-text">D.T.<%- registro[i].Delegado %> </p></h5></u>
+            <u>   <h5> <p class="card-text">ID.-<%- registro[i].id_plantel %> </p></h5></u>
+
+        </div>
+      </div>
+      <% } %>

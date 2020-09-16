@@ -1,0 +1,107 @@
+<%- include('../../principal/cabecera') %>
+<%- include('../../principal/menu') %>
+
+
+
+<div class="container">
+    ´
+    <% for(var i=0 ; i < registro.length; i++) { %>
+
+    
+    <div class="row">
+        <div class="col-md-2.5 shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card text-white bg-info border-dark text-center " style="width: 10rem;">
+                <img class="card-img-top" src="<%- registro[i].Foto %>" alt="Card image cap">
+                <div class="card-body">
+                    <u>   <h6 class="card-title"><%- registro[i].Nombres %> <%- registro[i].Apellido_Paterno %> <%- registro[i].Apellido_Materno %></h6></u>
+                  <u> <h5> <p class="card-text"><%- registro[i].Fecha_Nacimiento %> </p></h5></u>
+                    <u>   <h5> <p class="card-text">ID.-<%- registro[i].ID_FB %> </p></h5></u>
+
+                </div>
+              </div>
+        </div>
+        <% } %>
+
+
+        <div class="col-md-4">
+
+            <div class="container">
+                <h6>
+                    <small class="text-muted">
+                        Tus logros en la Copa FB
+                    </small>
+                  </h6> 
+            <table class="table table-sm table-striped table-bordered table-hover">
+            
+             <thead class="table-success">
+                <tr align="center">
+                  <th scope="col">Logo</th>
+            
+                  <th scope="col">Equipo</th>
+                  <th scope="col">Liga</th>
+                  <th scope="col">Cat.</th>
+                  <th scope="col">Torneo</th>
+                  
+            
+                </tr>
+              </thead>
+              <tbody>
+                  
+                  
+                  
+            
+              
+              </tbody>
+            </table>
+            
+            </div>
+            
+
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="container">
+                <h6>
+                    <small class="text-muted">
+                        Tus Goles en toda la Copa FB
+                    </small>
+                  </h6> 
+            <table class="table table-sm table-striped table-bordered table-hover">
+            
+             <thead class="table-success">
+                <tr align="center">
+                  <th scope="col">Goles</th>
+            
+                  <th scope="col">Equipo</th>
+                  <th scope="col">Torneo</th>
+                  <th scope="col">Dorsal</th>
+                  
+            
+                </tr>
+              </thead>
+              <tbody>
+                  
+                  
+                  
+            
+              
+              </tbody>
+            </table>
+            
+            </div>
+            
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+        
+      </div>
+</div>
+<%- include('../../principal/cierre') %>

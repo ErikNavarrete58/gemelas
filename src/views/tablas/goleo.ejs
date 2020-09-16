@@ -1,0 +1,41 @@
+<a name="tablagoleo"></a>
+    
+<div class="container p-4 mx-auto">
+
+<table class="table table-sm table-striped table-bordered table-hover">
+<h3>
+  <small class="text-muted">Tabla Goleo <%- categoria %> </small>
+</h3> 
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">#</th>
+
+      <th scope="col">Foto</th>
+      <th scope="col">Goles</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Equipo</th>
+      <th scope="col">Dorsal</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      
+      
+      
+
+    <% for(var i=0 ; i < goleo.length; i++) { %>
+      
+    <tr align="center">
+      <td><%- i+1 %></td>
+      <td><img src="<%- goleo[i].Foto %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- goleo[i].goles %></td>
+      <td><%- goleo[i].Nombres %></td>
+      <td><img src="<%- goleo[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- goleo[i].Dorsal %></td>
+    </tr>
+    <% } %>
+
+  </tbody>
+</table>
+
+</div>

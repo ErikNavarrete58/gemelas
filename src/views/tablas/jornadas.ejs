@@ -1,0 +1,47 @@
+<a name="resuljornada"></a>
+    
+<div class="container p-4 mx-auto">
+
+<table class="table table-sm table-striped table-bordered table-hover">
+<h3>
+  <small class="text-muted">Resultados por Jornadas <%- categoria %> </small>
+</h3> 
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">J</th>
+
+      <th scope="col">Esc.</th>
+      <th scope="col">Equipo</th>
+
+      <th scope="col">GF</th>
+      <th scope="col">GC</th>
+
+      <th scope="col">Rival</th>
+      <th scope="col">Puntos</th>
+      <th scope="col">Fecha</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      
+      
+      
+
+    <% for(var i=0 ; i < jornadas.length; i++) { %>
+      
+    <tr align="center">
+      <td><%- jornadas[i].Jornada %></td>
+      <td><img src="<%- jornadas[i].Escudolc %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- jornadas[i].Equipolc %></td>
+      <td><%- jornadas[i].GF %></td>
+      <td><%- jornadas[i].GC %></td>
+      <td><img src="<%- jornadas[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- jornadas[i].Puntos %></td>
+      <td><%- jornadas[i].Fecha %></td>
+    </tr>
+    <% } %>
+
+  </tbody>
+</table>
+
+</div>

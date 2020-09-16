@@ -1,0 +1,43 @@
+<div class="container">
+    <h6>
+        <small class="text-muted">
+Puntos en la categoria Mixta
+     </small>
+      </h6> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">Equipo</th>
+
+      <th scope="col">Puntos</th>
+      <th scope="col">GF</th>
+      <th scope="col">GC</th>
+      <th scope="col">DFG</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+      
+    <% for(var i=0 ; i < Globalesmix.length; i++) { %>
+             
+      <tr align="center">
+        <td><img src="<%- Globales[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+        <td><%- Globalesmix[i].Puntos %></td>
+        <td><%- Globalesmix[i].GF %></td>
+        <td><%- Globalesmix[i].GC %></td>
+        <td><%- Globalesmix[i].DFG %></td>
+  
+      </tr>
+      <% } %>
+  
+      
+      
+
+  
+  </tbody>
+</table>
+
+</div>
